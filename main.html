@@ -68,8 +68,8 @@
             font-weight: 400;
         }
         main {
-            width: 1000px;
-            height: 1000px;
+            width: 1200px;
+            height: 500px;
             display: flex;
             padding: 30px;
             margin: 0 auto;
@@ -79,6 +79,23 @@
         }
         h1 {
             text-align: center;
+        }
+        .table {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #dddddd;
+            border-collapse: collapse; 
+        }
+        .table th {
+            font-weight: bold;
+            padding: 5px;  
+            background: #efefef;
+            border: 1px solid #dddddd;
+        }
+
+        .table td {
+            border: 1px solid #dddddd;
+            padding: 5px;
         }
     </style>
 </head>
@@ -117,6 +134,38 @@
             обеспечение переносимости написанных на нём программ.</p>
         </div>
     </main>   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Языки программирования</th>
+                <th>Популярность</th>
+                <th>Средняя зарплата</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML, CSS</td>
+                <td>70%</td>
+                <td>200-250 тысяч тенге</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>28%</td>
+                <td>300-1500 тысяч тенге</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>35%</td>
+                <td>250-2000 тысяч тенге</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>60%</td>
+                <td>300-800 тысяч тенге</td>
+            </tr>
+        </tbody>
+    </table>
+        
 </body>
 
 </html>

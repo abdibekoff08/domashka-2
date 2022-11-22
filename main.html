@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <style>
+        .navbar ul {
+            display: none;
+            background-color: #f90;
+            position: absolute;
+            top: 100%;
+        }
+
+        .navbar li:hover ul {
+            display: block;
+        }
+
+        .navbar,
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .navbar {
+            height: 30px;
+            background-color: #666;
+            padding-left: 25px;
+            min-width: 470px;
+        }
+
+        .navbar li {
+            float: left;
+            position: relative;
+            height: 100%;
+        }
+
+        .navbar li a {
+            display: block;
+            padding: 6px;
+            width: 100px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            float: none;
+        }
+
+        .navbar li:hover {
+            background-color: #f90;
+        }
+
+        .navbar ul li:hover {
+            background-color: #666;
+        }
+        h3 {
+            text-align: center;
+            color: grey;
+            font-weight: 400;
+            font-size: 35px;
+        }
+        p {
+            background-color: grey;
+            color: white;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        main {
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            padding: 30px;
+            margin: 0 auto;
+        }
+        div {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Языки программирования</a>
+            <ul>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">C#</a></li>
+            </ul>
+        </li>
+        <li><a href="#">О нас</a></li>
+    </ul>
+
+    <h1>Популярные языки программирования и разработки</h1>
+    <main>
+        <div><h3>HTML & CSS</h3>
+            <p>HTML и CSS формируют структуру сайта. HTML говорит, что обозначается на странице — заголовки, абзацы, картинки и так
+            далее, а CSS говорит, как это будет выглядеть: какие размеры должны быть у заголовков, какого они цвета, есть ли
+            подчёркивания и так далее.</p>
+        </div>
+        <div>
+            <h3>JavaScript</h3>
+            <p>JavaScript — мультипарадигменный язык программирования. Поддерживает
+            объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript</p>
+        </div>
+        <div>
+            <h3>Python</h3>
+            <p>высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением
+            памятью, ориентированный на повышение производительности разработчика, читаемости кода и его качества, а также на
+            обеспечение переносимости написанных на нём программ.</p>
+        </div>
+    </main>   
+</body>
+
+</html>
